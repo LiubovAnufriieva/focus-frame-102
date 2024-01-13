@@ -1,5 +1,4 @@
-.advertisement {
-}
+
 
 @media screen and (min-width: 768px) {
   .advertisement {
@@ -18,6 +17,9 @@
 }
 
 @media screen and (min-width: 1280px) {
+  .advertisement {
+    max-width: 100%;
+  }
   .advertisement-inner {
     margin-bottom: 150px;
   }

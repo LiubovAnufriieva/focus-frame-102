@@ -63,10 +63,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #121212;
+  background-color: #121212;
   border: 0;
   padding: 0;
-  stroke: #fff;
+ 
 }
 
 .header-btn {
@@ -101,6 +101,7 @@
     display: flex;
     width: 186px;
     height: 60px;
+    padding: 0;
     justify-content: center;
     align-items: center;
     border-radius: 12px;
@@ -112,18 +113,24 @@
     line-height: 1.55;
     letter-spacing: 0.08em;
     text-transform: uppercase;
-    border: 0;
+    border: transparent;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
+ 
 
+  .header-mobile-btn:hover {
+    fill: #FFF; 
+  }
   .header-mobile-btn {
     display: none;
     visibility: hidden;
+   
   }
 
   .header-menu-btn-icon {
     width: 40px;
     height: 28px;
+    fill: rgba(190, 166, 158, 1);
   }
 }
 
@@ -257,6 +264,7 @@
   
   .mobile-menu {
     width: 480px;
+  
   }
 }
 
