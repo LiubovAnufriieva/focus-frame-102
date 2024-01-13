@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/focus-frame-102/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+    <title>focus-frame-102</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,22 +20,82 @@
 
     
     <script type="module" crossorigin src="/focus-frame-102/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/focus-frame-102/assets/index-081c4571.css">
+    <link rel="stylesheet" href="/focus-frame-102/assets/index-992a83d0.css">
   </head>
   <body>
-    <header class="header">
-  <nav class="nav">
-    <ul class="nav-list">
-      <li class="nav-item">
-        <a href="./page-2.html" class="nav-link">Page 2</a>
-      </li>
+    <header class="container header-container">
+  <nav class="header-nav">
+      <a href="./index.html" class="header-logo">
+          <svg class="header-logo-icon" width="123" height="16">
+              <use href="/focus-frame-102/assets/sprite-f98db027.svg#icon-logo"></use>
+          </svg>
+      </a>
+      <ul class="header-menu">
+          <li class="header-menu-item">
+              <a href="" class="header-link">About us</a>
+          </li>
+          <li class="header-menu-item">
+              <a href="" class="header-link">Our courses</a>
+          </li>
+          <li class="header-menu-item">
+              <a href="" class="header-link">Our mentors</a>
+          </li>
+          <li class="header-menu-item">
+              <a href="" class="header-link">Reviews</a>
+          </li>
+          <li class="header-menu-item">
+              <a href="" class="header-link">Contacts</a>
+          </li>
+          
+      </ul>
 
-      <li class="nav-item">
-        <a href="./page-3.html" class="nav-link">Page 3</a>
-      </li>
-    </ul>
+      <div class="header-mob-btn">
+          <button class="header-mobile-btn" type="button" aria-label="Sign up button">
+              <svg class="header-mobile-btn-icon" width="16" height="16">
+                  <use href="/focus-frame-102/assets/sprite-f98db027.svg#icon-camera"></use>
+              </svg>
+          </button>
+
+          <button class="header-menu-btn" type="button" aria-label="Open menu button">
+              <svg class="header-menu-btn-icon" width="32" height="22">
+                  <use href="/focus-frame-102/assets/sprite-f98db027.svg#icon-open-menu"></use>
+              </svg>
+          </button>
+      </div>
   </nav>
+
+  <button class="header-btn" aria-label="Sign up button">Sign up</button>
 </header>
+
+<!-- Mobile menu -->
+<div class="mobile-menu is-ope n">
+<button class="mobile-menu-btn" type="button">
+  <svg class="xclose-btn-mob" width="32" height="32">
+      <use href="/focus-frame-102/assets/sprite-f98db027.svg#xclose-btn-mob"></use>
+  </svg>
+</button>
+
+<ul class="mobile-menu-list">
+  <li class="mobile-menu-item menu-current">
+      <a href="" class="mobile-menu-link current">About us</a>
+  </li>
+  <li class="mobile-menu-item">
+      <a href="" class="mobile-menu-link">Our courses</a>
+  </li>
+  <li class="mobile-menu-item">
+      <a href="" class="mobile-menu-link">Our mentors</a>
+  </li>
+  <li class="mobile-menu-item">
+      <a href="" class="mobile-menu-link">Reviews</a>
+  </li>
+  <li class="mobile-menu-item">
+      <a href="" class="mobile-menu-link">Contacts</a>
+  </li>
+</ul>
+
+<div  class="mobile-menu-image">
+</div>
+</div>
 
     <main>
       <section class="hero-section container">
@@ -68,7 +128,12 @@
                 <p class="hero-review-desc-text">Reviews<span class="numbers-accent"> +1500</span></p>
             </div>
         </div>
-        <img class="hero-back-img" src="/focus-frame-102/assets/hero_mob@1x-6f19f139.jpg" alt="" width="">
+        <picture>
+            <source media="(min-width: 1158px)" srcset="/focus-frame-102/assets/hero_desk@1x-0a9a7cb9.png 1x, /focus-frame-102/assets/hero_desk@2x-41cdf51f.png 2x" >
+            <source media="(min-width: 768px)" srcset="../img/hero/hero_tab@1x.png 1x, ./img/hero/hero_tab@2x.png 2x" >
+            <source media="(max-width: 767px)" srcset="../img/hero/hero_mob@1x.png 1x, ./img/hero/hero_mob@2x.png 2x" >
+            <img class="hero-back-img" src="../img/hero/hero_desk@1x.png" alt="" width="">
+        </picture>
     </div>
     <div class="test-test">
 
@@ -76,14 +141,357 @@
 
     </div>
 </section>
+      <section class="advertisement">
+    <div class="advertisement-inner">
+      <h2 class="advertisement-line">
+        Master
+        <span class="advertisement-line-span">your photography</span> skills with
+        us!
+      </h2>
+      <h2 class="advertisement-line">
+        Master
+        <span class="advertisement-line-span">your photography</span> skills with
+        us!
+      </h2>
+    </div>
+  </section>
+      <section class="about container">
+    <h2 class="about-title">About <span class="about-title-span">Us</span></h2>
+    <div class="about-div">
+      <picture>
+        <source
+          media="(min-width: 1280px)"
+          srcset="
+            ./img/about/about_desk@1x.png 1x,
+            img/about/about_desk@2x.png   2x
+          "
+        />
+        <source
+          media="(max-width: 767px)"
+          srcset="./img/about/about_mob@1x.png 1x, img/about/about_mob@2x.png 2x"
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="./img/about/about_tab@1x.png 1x, img/about/about_tab@2x.png 2x"
+        />
+  
+        <img src="./img/about/about_mob@1x.png" alt="Camera" class="about-img" />
+      </picture>
+  
+      <p class="about-text">
+        Our photography school is designed to teach you everything you need to
+        know about this magical art. Regardless of your experience or skill level,
+        we offer a wide range of courses to suit your needs and interests. Our
+        teaching team consists of experienced photographers who have many years of
+        experience in this field. They strive not only to share their knowledge,
+        but also to inspire you to develop and express your unique creativity.
+      </p>
+      <p class="about-text">
+        Our courses cover a wide range of topics, from the basics of photography
+        and equipment use to professional image processing and creating impressive
+        compositions. You will have the opportunity to learn the technical aspects
+        of photography, discover your own style and develop your own visual
+        language.
+      </p>
+    </div>
+  </section>
+  
+      <section class="courses">
+    <div class="courses-container container">
+      <div class="courses-wrap">
+        <h2 class="courses-title">Our <span class="courses-span">Courses</span></h2>
+        <p class="courses-desk">
+          At our photography school, we offer a variety of courses that cover all aspects of this
+          fascinating art. Regardless of your experience or skill level, we have courses to suit
+          your needs and goals.
+        </p>
+      </div>
+      <ol class="courses-list">
+        <li class="courses-item">          
+          <h3 class="courses-subtitle">Basics of photography</h3>
+          <p class="courses-text">
+            During this course, you will be able to familiarize yourself with different types of
+            cameras, learn the basics of composition.
+          </p>
+          <a class="courses-item-link" href="./signup.html">
+            <svg class="courses-item-icon" width="20" height="20">
+              <use href="/focus-frame-102/assets/sprite-f98db027.svg#icon-arrow-narrow-up-right"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="courses-item">          
+          <h3 class="courses-subtitle">Landscape photography</h3>
+          <p class="courses-text">
+            In this course, you'll learn how to choose the right angles, frame landscapes, and
+            create depth and perspective in your images.
+          </p>
+          <a class="courses-item-link" href="./signup.html">
+            <svg class="courses-item-icon" width="20" height="20">
+              <use href="/focus-frame-102/assets/sprite-f98db027.svg#icon-arrow-narrow-up-right"></use>
+            </svg>
+          </a>                    
+        </li>
+        <li class="courses-item">          
+          <h3 class="courses-subtitle">Portrait photography</h3>
+          <p class="courses-text">
+            During this course, you will learn to choose the right lighting, reproduce the mood and
+            expressions on the faces of the models.
+          </p>
+          <a class="courses-item-link" href="./signup.html">
+            <svg class="courses-item-icon" width="20" height="20">
+              <use href="/focus-frame-102/assets/sprite-f98db027.svg#icon-arrow-narrow-up-right"></use>
+            </svg>     
+          </a>
+        </li>
+      </ol>
+    </div>
+  </section>
+      <section class="mentors">
+    <div class="container team-content">
+        <h2 class="team-hed">Our <span class="team-hed-color">Mentors</span></h2>
+        <ul class="team-list">
+            <li class="team-collection">
+                <img 
+                    class="team-img"
+                    src="/focus-frame-102/assets/mentor1@1x-263acbfb.jpg"
+                    srcset="/focus-frame-102/assets/mentor1@1x-263acbfb.jpg 1x, /focus-frame-102/assets/mentor1@2x-30f41caa.jpg 2x"
+                    alt="Emilia Smith"
+                    width="180"
+                    height="180">
+                <div class="list-info">
+                    <h3 class="team-names">Emilia Smith</h3>
+                    <p class="team-items">1.5 years of experience</p>
+                </div>
+            </li >
+            <li class="team-collection">
+                <img 
+                    class="team-img"
+                    src="/focus-frame-102/assets/mentor2@1x-8211ace8.jpg"
+                    srcset="/focus-frame-102/assets/mentor2@1x-8211ace8.jpg 1x, /focus-frame-102/assets/mentor2@2x-dabb1aec.jpg 2x"
+                    alt="Alex Lebedev"
+                    width="180"
+                    height="180">
+                <div class="list-info">
+                    <h3 class="team-names">Alex Lebedev</h3>
+                    <p class="team-items">3.5 years of experience</p>
+                </div>
+            </li>
+            <li class="team-collection">
+                <img 
+                    class="team-img"
+                    src="/focus-frame-102/assets/mentor3@1x-2097657d.jpg"
+                    srcset="/focus-frame-102/assets/mentor3@1x-2097657d.jpg 1x, /focus-frame-102/assets/mentor3@2x-bc9b2499.jpg 2x"
+                    alt="Mia Dubrovska"
+                    width="180"
+                    height="180">
+                <div class="list-info">
+                    <h3 class="team-names">Mia Dubrovska</h3>
+                    <p class="team-items">2.0 years of experience</p>
+                </div>
+            </li>
+            <li class="team-collection">
+                <img 
+                    class="team-img"
+                    src="/focus-frame-102/assets/mentor4@1x-8df68921.jpg"
+                    srcset="/focus-frame-102/assets/mentor4@1x-8df68921.jpg 1x, /focus-frame-102/assets/mentor4@2x-44d070e8.jpg 2x"
+                    alt="Eliot Kovalev"
+                    width="180"
+                    height="180">
+                <div class="list-info">
+                    <h3 class="team-names">Eliot Kovalev</h3>
+                    <p class="team-items">4.0 years of experience</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</section> 
       
-      
-      
-      
-      
-      
+      <section class="Reviews" #id="reviews">
+    <div class="container">
+      <h2 class="reviews-title">Reviews</h2>
+      <div class="reviews-wrapper">
+        <div class="reviews-wrapper-1">
+          <div class="reviews-wrapper-top">
+            <img
+              class="reviews-img"
+              width="56"
+              height="56"
+              srcset="/focus-frame-102/assets/reviews1_desk@1x-3626c7a9.jpg 1x, /focus-frame-102/assets/reviews1_desk@2x-c9bf7c39.jpg 2x"
+              src="/focus-frame-102/assets/reviews1_desk@1x-3626c7a9.jpg"
+              alt="user"
+            />
+            <div class="reviews-wrapper-text">
+              <h3 class="reviews-subtitle">Abraham Baker</h3>
+              <p class="reviews-position">Student</p>
+            </div>
+          </div>
+          <div class="reviews-wrapper-icons">
+            <ul class="reviews-list-icons">
+              <li class="reviews-item-icons">
+                <svg class="reviews-icons" width="16" height="16">
+                  <use href="/focus-frame-102/assets/sprite-f98db027.svg#icon-star"></use>
+                </svg>
+              </li>
+              <li class="reviews-item-icons">
+                <svg class="reviews-icons" width="16" height="16">
+                  <use href="/focus-frame-102/assets/sprite-f98db027.svg#icon-star"></use>
+                </svg>
+              </li>
+              <li class="reviews-item-icons">
+                <svg class="reviews-icons" width="16" height="16">
+                  <use href="/focus-frame-102/assets/sprite-f98db027.svg#icon-star"></use>
+                </svg>
+              </li>
+              <li class="reviews-item-icons">
+                <svg class="reviews-icons" width="16" height="16">
+                  <use href="/focus-frame-102/assets/sprite-f98db027.svg#icon-star"></use>
+                </svg>
+              </li>
+              <li class="reviews-item-icons">
+                <svg class="reviews-icons" width="16" height="16">
+                  <use href="/focus-frame-102/assets/sprite-f98db027.svg#icon-star"></use>
+                </svg>
+              </li>
+            </ul>
+          </div>
+          <p class="reviews-p">
+            I am very pleased that I decided to enroll in photography
+            school. The teachers turned out to be very talented and
+            experienced professionals who share their knowledge and are
+            dedicated to their work. I was able to expand my skills and
+            discover my own style.
+          </p>
+        </div>
+        <div class="reviews-wrapper-2">
+          <div class="reviews-wrapper-top">
+            <img
+              class="reviews-img"
+              width="56"
+              height="56"
+              srcset="/focus-frame-102/assets/reviews2_desk@1x-acb205aa.jpg 1x, /focus-frame-102/assets/reviews2_desk@2x-54ad83ba.jpg 2x"
+              src="/focus-frame-102/assets/reviews2_desk@1x-acb205aa.jpg"
+              alt="user"
+            />
+            <div class="reviews-wrapper-text">
+              <h3 class="reviews-subtitle">Abraham Baker</h3>
+              <p class="reviews-position">Student</p>
+            </div>
+          </div>
+          <div class="reviews-wrapper-icons">
+            <ul class="reviews-list-icons">
+              <li class="reviews-item-icons">
+                <svg class="reviews-icons" width="16" height="16">
+                  <use href="/focus-frame-102/assets/sprite-f98db027.svg#icon-star"></use>
+                </svg>
+              </li>
+              <li class="reviews-item-icons">
+                <svg class="reviews-icons" width="16" height="16">
+                  <use href="/focus-frame-102/assets/sprite-f98db027.svg#icon-star"></use>
+                </svg>
+              </li>
+              <li class="reviews-item-icons">
+                <svg class="reviews-icons" width="16" height="16">
+                  <use href="/focus-frame-102/assets/sprite-f98db027.svg#icon-star"></use>
+                </svg>
+              </li>
+              <li class="reviews-item-icons">
+                <svg class="reviews-icons" width="16" height="16">
+                  <use href="/focus-frame-102/assets/sprite-f98db027.svg#icon-star"></use>
+                </svg>
+              </li>
+              <li class="reviews-item-icons">
+                <svg class="reviews-icons" width="16" height="16">
+                  <use href="/focus-frame-102/assets/sprite-f98db027.svg#icon-star"></use>
+                </svg>
+              </li>
+            </ul>
+          </div>
+          <p class="reviews-p">
+            I am very pleased that I decided to enroll in photography
+            school. The teachers turned out to be very talented and
+            experienced professionals who share their knowledge and are
+            dedicated to their work. I was able to expand my skills and
+            discover my own style.
+          </p>
+        </div>
+      </div>
+    </div>
+</section>
     </main>
-    
+    <footer>
+  <!-- ===================== Bloc one ===================== -->
+  <!-- Logo -->
+  <a href=".index.html">
+    <svg class="" width="123px" height="16px">
+      <use href="../public/sprite.svg#icon-logo"></use>
+    </svg>
+  </a>
+  <!-- Address -->
+  <address id="Contacts">
+    <a href="tel:+380665438912">UK: +38 066 543 8912</a>
+    <p>Ukraine, Kyiv</p>
+  </address>
+  <!-- Privacy policy -->
+  <a href="./" target="_blank" rel="noopener noreferrer"
+    >Privacy Policy Public Offering Agreement</a
+  >
+  <!-- ===================== Bloc two ===================== -->
+
+  <!-- Social media -->
+  <ul>
+    <li>
+      <a
+        href="https://www.instagram.com/goitclub/"
+        target="_blank"
+        rel="noopener noreferrer"
+        >Instagram</a
+      >
+    </li>
+    <li>
+      <a
+        href="https://www.facebook.com/goITclub/"
+        target="_blank"
+        rel="noopener noreferrer"
+        >Facebook</a
+      >
+    </li>
+    <li>
+      <a
+        href="https://www.youtube.com/c/GoIT"
+        target="_blank"
+        rel="noopener noreferrer"
+        >Youtube</a
+      >
+    </li>
+  </ul>
+  <!-- Anchor links  -->
+  <ul>
+    <li><a href="#About">About us</a></li>
+    <li><a href="#Courses">Our courses</a></li>
+    <li><a href="#Mentors">Our mentors</a></li>
+    <li><a href="#Reviews">Reviews</a></li>
+    <li><a href="#Contacts">Contacts</a></li>
+  </ul>
+  <!-- ==================== Bloc three ==================== -->
+  <!-- Subscribe -->
+  <form name="Subscribe" autocomplete="on" method="post" novalidate>
+    <label>
+      <input
+        type="email"
+        name="subscribe_email"
+        pattern="@"
+        title="E-mail must content @"
+        placeholder="Enter your email"
+        aria-label="Enter your email"
+      />
+    </label>
+    <button type="submit" aria-label="Button for send your subscribe email">
+      Go
+    </button>
+  </form>
+  <!-- Copyright -->
+  <p>2023 Focus Frame © All rights reserved</p>
+</footer>
    
       <!-- Path to images as from index.html file -->
     
