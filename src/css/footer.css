@@ -1,7 +1,7 @@
 .footer {
     padding-top: 50px;
     padding-bottom: 20px;
-
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
     background-image: url('../img/Graphic.png'); /* Замініть '/path/to/your/grid-background.png' шляхом до вашого png-зображення */
     background-size: contain;
     background-repeat: repeat; /* Тут використовуйте 'repeat' для пунктирної сітки */
@@ -262,9 +262,15 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 75px;
 }
 
 @media screen and (min-width: 768px) {
 .term {
-    margin-top: 160px;
+    margin-top: 74px;
 }}
+@media screen and (min-width: 1280px) {
+    .term {
+        margin-top: 50px;
+    }
+}
