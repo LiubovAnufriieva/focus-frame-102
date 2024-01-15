@@ -1,5 +1,12 @@
 .footer {
+    padding-top: 50px;
     padding-bottom: 20px;
+
+    background-image: url('../img/Graphic.png'); /* Замініть '/path/to/your/grid-background.png' шляхом до вашого png-зображення */
+    background-size: contain;
+    background-repeat: repeat; /* Тут використовуйте 'repeat' для пунктирної сітки */
+    position: relative;
+    z-index: 1; /* Щоб забезпечити, що вміст знаходиться над фоновим зображенням */
 }
 
 @media screen and (min-width: 768px) {
