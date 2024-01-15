@@ -1,5 +1,5 @@
-.mentors { /*section*/
-    
+    .mentors { /*section*/
+    margin-bottom: 80px;
     }
     .team-content {/*div*/
     
@@ -12,6 +12,9 @@
     }
     
     @media only screen and (min-width: 768px) {
+        .mentors { /*section*/
+            margin-bottom: 100px;
+            }
        .team-hed {
         font-size: 48px;
         line-height: 1.12em;
@@ -64,4 +67,10 @@
         line-height: 1.33em;
         letter-spacing: -0.02em;
         padding-top: 4px;
+    }
+
+    @media only screen and (min-width: 768px) { 
+    .mentors { /*section*/
+        margin-bottom: 150px;
+        }
     }

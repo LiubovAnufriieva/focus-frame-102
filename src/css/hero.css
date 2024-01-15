@@ -2,6 +2,7 @@
 
 .png-wrapper {
   margin: 0;
+  padding-top: 20px;
   padding-bottom: 80px;
   background-image: url('../img/hero/Graphic.png'); /* Замініть '/path/to/your/grid-background.png' шляхом до вашого png-зображення */
   background-size: contain;
@@ -208,7 +209,7 @@
 
 @media screen and (min-width: 1280px) {
   .png-wrapper {
-    padding-bottom: 150px;
+    padding-bottom: 0;
   }
 
   .hero-wrapper {
