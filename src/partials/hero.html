@@ -1,4 +1,4 @@
-<section class="hero-section container">
+<section class="hero-section container" id="hero">
     <div class="hero-wrapper ">
         <h1 class="hero-title">Discover the magic of <span class="italic-accent">photography</span> in our
             school</h1>
@@ -7,15 +7,34 @@
         <div class="hero-review-wrapper">
             <div class="hero-review-block">
                 <ul class="hero-review-list">
-                    <li class="hero-review-item"><img class="review-img" src="./img/hero/hero-icon1@1x.png" alt="" width="44"></li>
-                    <li class="hero-review-item"><img class="review-img" src="./img/hero/hero-icon2@1x.png" alt="" width="44">
+                    <li class="hero-review-item">
+                        <picture>
+                            <source srcset="./img/hero/hero-icon1@1x.webp 1x, ./img/hero/hero-icon1@2x.webp 2x"
+                                type="image/webp">
+                            <img class="review-img" src="./img/hero/hero-icon1@1x.png" alt="Girl-1" width="44"
+                                height="44">
+                        </picture>
                     </li>
-                    <li class="hero-review-item"><img class="review-img" src="./img/hero/hero-icon3@1x.png" alt="" width="44">
+                    <li class="hero-review-item">
+                        <picture>
+                            <source srcset="./img/hero/hero-icon2@1x.webp 1x, ./img/hero/hero-icon2@2x.webp 2x"
+                                type="image/webp">
+                            <img class="review-img" src="./img/hero/hero-icon2@1x.png" alt="Boy" width="44" height="44">
+                        </picture>
+                    </li>
+                    <li class="hero-review-item">
+                        <picture>
+                            <source srcset="./img/hero/hero-icon3@1x.webp 1x, ./img/hero/hero-icon3@2x.webp 2x"
+                                type="image/webp">
+                            <img class="review-img" src="./img/hero/hero-icon3@1x.png" alt="Girl-2" width="44"
+                                height="44">
+                        </picture>
                     </li>
                 </ul>
                 <div class="hero-review-link-container">
                     <a class="hero-review-link" href="#reviews">Our happy students</a>
-                    <svg class="hero-arrow-icon" width="18" height="9"> <use href="./public/sprite.svg#hero-arrow"></use>
+                    <svg class="hero-arrow-icon" width="18" height="9">
+                        <use href="./public/sprite.svg#hero-arrow"></use>
                     </svg>
                 </div>
             </div>
@@ -29,15 +48,14 @@
             </div>
         </div>
         <picture>
-            <source media="(min-width: 1158px)" srcset="./img/hero/hero_desk@1x.png 1x, ./img/hero/hero_desk@2x.png 2x" >
-            <source media="(min-width: 768px)" srcset="./img/hero/hero_tab@1x.png 1x, ./img/hero/hero_tab@2x.png 2x" >
-            <source media="(max-width: 767px)" srcset="./img/hero/hero_mob@1x.png 1x, ./img/hero/hero_mob@2x.png 2x" >
-            <img class="hero-back-img" src="./img/hero/hero_mob@1x.png" alt="" width="">
+            <source media="(min-width: 1280px)"
+                srcset="./img/hero/hero_desk@1x.webp 1x, ./img/hero/hero_desk@2x.webp 2x">
+            <source media="(min-width: 768px) and (max-width: 1270px)"
+                srcset="./img/hero/hero_tab@1x.webp 1x, ./img/hero/hero_tab@2x.webp 2x">
+            <source media="(min-width: 320px) and (max-width: 767px)"
+                srcset="./img/hero/hero_mob@1x.webp 1x, ./img/hero/hero_mob@2x.webp 2x">
+            <img class="hero-back-img" src="./img/hero/hero_mob@1x.webp" alt="Camera man" loading="lazy" width="397"
+                height="520">
         </picture>
-    </div>
-    <div class="test-test">
-
-    </div>
-
     </div>
 </section>

@@ -1,4 +1,6 @@
-
+.advertisement {
+  overflow: hidden
+}
 
 @media screen and (min-width: 768px) {
   .advertisement {
@@ -7,22 +9,6 @@
 
 .advertisement-inner {
   display: flex;
-  margin-bottom: 80px;
-}
-
-@media screen and (min-width: 768px) {
-  .advertisement-inner {
-    margin-bottom: 100px;
-  }
-}
-
-@media screen and (min-width: 1280px) {
-  .advertisement {
-    max-width: 100%;
-  }
-  .advertisement-inner {
-    margin-bottom: 150px;
-  }
 }
 
 .advertisement-line {

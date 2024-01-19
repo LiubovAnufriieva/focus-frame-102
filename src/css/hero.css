@@ -2,9 +2,8 @@
 
 .png-wrapper {
   margin: 0;
-  padding-top: 20px;
   padding-bottom: 80px;
-  background-image: url('../img/hero/Graphic.png'); /* Замініть '/path/to/your/grid-background.png' шляхом до вашого png-зображення */
+  background-image: url('../img/hero/Graphic.webp'); /* Замініть '/path/to/your/grid-background.png' шляхом до вашого png-зображення */
   background-size: contain;
   background-repeat: repeat; /* Тут використовуйте 'repeat' для пунктирної сітки */
   position: relative;
@@ -86,6 +85,8 @@
 .hero-review-link-container {
   display: flex;
   align-items: center;
+
+  
 }
 
 .hero-arrow-icon {
@@ -103,6 +104,8 @@
   font-weight: 400;
   line-height: 1.28; /* 128.571% */
   letter-spacing: -0.04em;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-review-link-container:hover .hero-review-link,
@@ -111,13 +114,6 @@
   font-weight: 500;
 
 }
-
-.hero-review-link-container:hover .hero-arrow-icon,
-.hero-review-link-container:focus .hero-arrow-icon{
-  fill: #BEA69E;
-}
-
-
 
 .hero-review-desc {
   display: flex;
@@ -209,7 +205,7 @@
 
 @media screen and (min-width: 1280px) {
   .png-wrapper {
-    padding-bottom: 0;
+    padding-bottom: 150px;
   }
 
   .hero-wrapper {
