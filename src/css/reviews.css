@@ -1,5 +1,18 @@
 .reviews {
-  margin-bottom: 80px;
+  padding-top: 40px;
+  padding-bottom: 80px;
+}
+@media only screen and (min-width: 768px) {
+  .reviews {
+    padding-top: 50px;
+    padding-bottom: 100px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .reviews {
+    padding-top: 75px;
+    padding-bottom: 150px;
+  }
 }
 
 .reviews.container {
@@ -11,22 +24,16 @@
 
 .reviews-title {
   width: 100px;
-
-  color: #fff;
-  font-family: DM Sans;
+  margin-bottom: 40px;
   font-size: 28px;
   font-style: normal;
-  font-weight: 500;
   line-height: 1.14; /* 114.286% */
   letter-spacing: -0.04em;
 }
 @media only screen and (min-width: 768px) {
-  .reviews {
-    margin-bottom: 100px;
-  }
   .reviews-title {
     width: 171px;
-
+    margin-bottom: 50px;
     font-size: 48px;
 
     line-height: 1.13; /* 112.5% */
@@ -35,9 +42,6 @@
 }
 
 @media only screen and (min-width: 1280px) {
-  .reviews {
-    margin-bottom: 150px;
-  }
   .reviews-wrapper {
     display: flex;
     min-width: 1080px;
@@ -46,8 +50,7 @@
 
 .reviews-wrapper-1 {
   width: 100%;
-  max-height: 244px;
-  margin-top: 40px;
+
   padding: 20px;
 
   border-radius: 12px;
@@ -57,8 +60,7 @@
   .reviews-wrapper-1 {
     position: relative;
     max-width: 640px;
-    max-height: 196px;
-    margin-top: 50px;
+
     margin-left: auto;
     margin-right: auto;
   }
@@ -66,17 +68,16 @@
 @media only screen and (min-width: 1280px) {
   .reviews-wrapper-1 {
     max-width: 530px;
-    max-height: 216px;
+
     margin-left: 0;
     margin-right: 20px;
   }
 }
 .reviews-wrapper-2 {
   position: relative;
-  margin-top: 50px;
 
   max-width: 530px;
-  max-height: 216px;
+
   padding: 20px;
 
   border-radius: 12px;
@@ -112,18 +113,13 @@
   gap: 4px;
 }
 .reviews-subtitle {
-  color: #fff;
-  font-family: DM Sans;
   font-size: 20px;
-  font-style: normal;
   font-weight: 500;
   line-height: 1.2; /* 120% */
 }
 .reviews-position {
   color: rgba(255, 255, 255, 0.5);
-  font-family: DM Sans;
   font-size: 12px;
-  font-style: normal;
   font-weight: 400;
   line-height: 1.33; /* 133.333% */
   letter-spacing: -0.02em;
@@ -151,7 +147,6 @@
 .reviews-list-icons {
   display: flex;
   flex-direction: row;
-
   gap: 4px;
 }
 .reviews-item-icons {
@@ -160,14 +155,9 @@
 .reviews-item-icons:nth-child(5) {
   fill: #414141;
 }
-.reviews-icons {
-}
 
 .reviews-p {
-  color: #fff;
-  font-family: DM Sans;
   font-size: 14px;
-  font-style: normal;
   font-weight: 400;
   line-height: 1.29; /* 128.571% */
   letter-spacing: -0.02em;
