@@ -20,7 +20,7 @@
 
     
     <script type="module" crossorigin src="/focus-frame-102/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/focus-frame-102/assets/index-08217649.css">
+    <link rel="stylesheet" href="/focus-frame-102/assets/index-57561332.css">
   </head>
   <body>
     <div class="png-wrapper">
@@ -58,7 +58,7 @@
             </a>
             
 
-            <button class="header-menu-btn" type="button" aria-label="Open menu button">
+            <button class="header-menu-btn" type="button" aria-label="Open menu button" data-menu-open>
                 <svg class="header-menu-btn-icon" width="32" height="22">
                     <use href="/focus-frame-102/assets/sprite-77729016.svg#icon-open-menu"></use>
                 </svg>
@@ -71,9 +71,10 @@
 </header>
 
 <!-- Mobile menu -->
-<div class="backdrop is-ope n">
+<div class="backdrop is-hidden" data-menu>
 <div class="mobile-menu">
-<button class="mobile-menu-btn" type="button">
+<button class="mobile-menu-btn" type="button" aria-label="Close menu button"
+data-menu-close>
     <svg class="xclose-btn-mob" width="32" height="32">
         <use href="/focus-frame-102/assets/sprite-77729016.svg#xclose-btn-mob"></use>
     </svg>
