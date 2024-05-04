@@ -3,25 +3,25 @@
     padding-bottom: 20px;
     border-top:  1px solid rgba(255, 255, 255, 0.20);
 
-    background-image: url('/img/hero/Graphic.png');
+    background-image: url('../img/footer/Graphic.png');
     background-repeat: repeat;
 }
 
 @media screen and (min-width: 320px) {
     .footer {
-        background-image: url('/img/footer/Graphic_mob.png');
+        background-image: url('../img/footer/Graphic_mob.png');
 }}
 
 @media screen and (min-width: 768px) {
     .footer {
         padding-top: 50px;
         padding-bottom: 25px;
-        background-image: url('/img/footer/Graphic_tab.png');
+        background-image: url('../img/footer/Graphic_tab.png');
 }}
 
 @media screen and (min-width: 1280px) {
     .footer {
-        background-image: url('/img/footer/Graphic_desk.png');
+        background-image: url('../img/footer/Graphic_desk.png');
 }}
 
 /* Logo */
