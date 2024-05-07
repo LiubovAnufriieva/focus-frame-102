@@ -4,8 +4,6 @@ import 'izitoast/dist/css/iziToast.min.css';
 import 'modern-normalize';
 
 
-
-
 // Show message on submit subscription form in footer
 const form = document.querySelector('.footer-form');
 
@@ -24,24 +22,21 @@ function handleSubmit(event) {
       animateInside: true,
       position: 'topCenter',
       title: 'Info',
+      timeout: 3000,
       message: 'Incorrect value of email!', 
     });
   } else { 
-    if (userEmail.checkValidity()) { 
       clearInput();
-      return alert('You successfully subscribed on our updates! Thank you');
-    }
-   
-    // iziToast.info({
+        iziToast.info({
+        animateInside: true,
+        position: 'topCenter',
+        title: 'Info',
+        timeout: 3000,
+        message: 'You successfully subscribed on our updates! Thank you',
+      });
       
-    //   animateInside: true,
-    //   position: 'topCenter',
-    //   title: 'Info',
-    //   message: 'You successfully subscribed on our updates! Thank you',
-    // });
-  }
-}
-
+    }
+ }
 
 // Встановлюємо значення поля введення як порожній рядок
 function clearInput() {
